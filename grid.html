@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: inline-block;
+            vertical-align: middle;
+        }
+            #parent2{
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template:
+             "a1 a2 a2 a3"
+            "a1 a4 a4 a3"
+            "a5 a5 a5 a5";
+        grid-gap: 5px;
+        }
+        #a{
+            background-color: rgb(92, 92, 218);
+            grid-area: a1;
+        }
+        #b{
+            background-color: rgb(117, 39, 39);
+            grid-area: a2;
+        }
+        #c{
+            background-color: rgb(120, 209, 187);
+            grid-area: a3;
+        }
+        #d{
+            background-color: rgb(211, 230, 129);
+            grid-area: a4;
+        }
+      
+        #e{
+            background-color: rgb(121, 211, 113);
+            grid-area: a5;
+        }
+        #parent{
+        row-gap: 5px;
+        column-gap: 5px;
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template: 
+            "A1 A2 A3"
+            "A4 A5 A5"
+            "A6 A5 A5"
+        }
+         #A1{
+             grid-area: A1;
+background-color: black
+         }
+         #A2{
+            grid-area: A2;
+background-color: blue;
+        }
+        #A3{
+            grid-area: A3;
+background-color: rgb(248, 115, 6);
+        }
+        #A4{
+            grid-area: A4;
+background-color: rgb(11, 253, 32);
+        }
+        #A5{
+            grid-area: A5;
+background-color: rgb(240, 9, 182);
+        }
+        #A6{
+            grid-area: A6;
+background-color: rgb(10, 223, 238);
+        }
+     
+        
+        #main2{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        /* style for row and column grid */
+        #parent3{
+            width: 900px;
+            height: 600px;
+            /* border: solid black; */
+            display: grid;
+            grid:300px 200px 300px/200px 100px 300px 400px;
+        }
+        #parent3>div{
+            border: solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+    <div id="parent">
+        <div id="A1">a</div>
+        <div id="A2">b</div>
+        <div id="A3">c</div>
+        <div id="A4">d</div>
+        <div id="A5">e</div>
+        <div id="A6">f</div>
+    </div>
+    </div>
+    <div id="main2">
+    <div id="parent2">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d"></div>
+        <div id="e"></div>
+    </div>
+    </div>
+    <!-- row and column grid -->
+    <div id="parent3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
